@@ -1,24 +1,36 @@
 package com.hibernate.been;
 
 public class User {
-
-	String username;
-	String password;
+    
+	int id;
+	String userName;
+	String password1;
 	
-	public String getUsername() {
-		return username;
+	public int getId() {
+		return id;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
+	public String getUserName() {
+		return userName;
 	}
 
-	public String getPassword() {
-		return password;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public String getPassword1() {
+		return password1;
 	}
+
+	public void setPassword1(String password1) {
+		this.password1 = password1;
+	}
+
+	
 	
 }

@@ -44,7 +44,7 @@ public class UserControllerServlet extends HttpServlet {
 		try {
 			UserDAO userDAO = new UserDAO();
 			userDAO.addUserDetails(userName, password);
-			response.sendRedirect("Success");
+			response.sendRedirect("success");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -2,8 +2,10 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.hibernate.bean.User" table="user">
-		<id column="ID" name="id" type="java.lang.Integer" />
+	<class name="com.hibernate.been.User" table="user">
+		<id name="id">  
+ 		<generator class="increment"></generator>  
+ 		</id>  		
 		<property column="USER_NAME" name="userName" type="java.lang.String" />
 		<property column="PASSWORD" name="password1" type="string" />
 	</class>

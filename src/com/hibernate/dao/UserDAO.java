@@ -27,8 +27,8 @@ public class UserDAO {
 			// 4. Starting Transaction
 			Transaction transaction = session.beginTransaction();
 			User user = new User();
-			user.setUsername(userName);
-			user.setUsername(password);
+			user.setUserName(userName);
+			user.setPassword1(password);
 			
 			
 			session.save(user);

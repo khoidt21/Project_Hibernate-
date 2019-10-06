@@ -6,6 +6,13 @@ public class User {
 	String userName;
 	String password1;
 	
+//	public User(String userName,String password1) {
+//		super();
+//		this.userName = userName;
+//		this.password1 = password1;
+//		
+//	}
+	
 	public int getId() {
 		return id;
 	}

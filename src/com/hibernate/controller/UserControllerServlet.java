@@ -15,7 +15,14 @@ import com.hibernate.dao.UserDAO;
 @WebServlet("/UserControllerServlet")
 public class UserControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    
+	private UserDAO userDao;
+
+    public void init() {
+        userDao = new UserDAO();
+    }
+	
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -42,8 +49,8 @@ public class UserControllerServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession(true);
 		try {
-			UserDAO userDAO = new UserDAO();
-			userDAO.addUserDetails(userName, password);
+			
+			userDao.addUserDetails(userName, password);
 			response.sendRedirect("success");
 		} catch (Exception e) {
 			e.printStackTrace();

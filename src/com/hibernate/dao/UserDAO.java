@@ -30,7 +30,6 @@ public class UserDAO {
 			user.setUserName(userName);
 			user.setPassword1(password);
 			
-			
 			session.save(user);
 			transaction.commit();
 			System.out.println("\n\n Details Added \n");

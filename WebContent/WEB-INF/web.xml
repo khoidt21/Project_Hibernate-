@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DemoWeb2</display-name>
+  <welcome-file-list>
+    <welcome-file>register.jsp</welcome-file>
+  </welcome-file-list>
+   <servlet>
+	<servlet-name>UserControllerServlet</servlet-name>
+	<servlet-class>com.hibernate.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserControllerServlet</servlet-name>
+		<url-pattern>/usercontrollerservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>Success</servlet-name>
+	<servlet-class>com.hibernate.controller.Success</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Success</servlet-name>
+		<url-pattern>/success</url-pattern>
+	</servlet-mapping>
+</web-app>

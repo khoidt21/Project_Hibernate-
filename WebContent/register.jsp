@@ -18,6 +18,22 @@
 				<td>Password :</td>
 				<td><input type="password" name="password1" size="30" /></td>
 			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td><input type="password" name="password2" size="30"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email" size="30"></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="phone" size="30"></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><input type="text" name="city" size="30"></td>
+			</tr>
 		</table>
 		<p />
 		<input type="submit" value="Register" />

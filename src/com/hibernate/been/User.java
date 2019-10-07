@@ -1,17 +1,15 @@
+
 package com.hibernate.been;
 
+
 public class User {
-    
-	int id;
-	String userName;
-	String password1;
-	
-//	public User(String userName,String password1) {
-//		super();
-//		this.userName = userName;
-//		this.password1 = password1;
-//		
-//	}
+    	
+	private int id;
+	private String userName;
+	private String password1;
+	private String email;
+	private String phone;
+	private String city;
 	
 	public int getId() {
 		return id;
@@ -38,6 +36,30 @@ public class User {
 		this.password1 = password1;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+	
 	
 	
 }

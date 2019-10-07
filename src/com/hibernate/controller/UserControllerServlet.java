@@ -46,11 +46,14 @@ public class UserControllerServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password1");
+		String email = request.getParameter("email");
+		String phone = request.getParameter("phone");
+		String city = request.getParameter("city");
 		
 		HttpSession session = request.getSession(true);
 		try {
 			
-			userDao.addUserDetails(userName, password);
+			userDao.addUserDetails(userName, password,email,phone,city);
 			response.sendRedirect("success");
 		} catch (Exception e) {
 			e.printStackTrace();
